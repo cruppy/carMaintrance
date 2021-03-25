@@ -1,45 +1,46 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Рассчитать стоимость владение автомобилем</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script async src="javascript.js" type="text/javascript"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container">
-        <h1>Рассчитать стоимость владение автомобилем</h1>
-      <div class="row justify-content-md-center">
+<div class="container">
+    <h1>Рассчитать стоимость владение автомобилем</h1>
+    <div class="row justify-content-md-center">
         <div class="col-md-auto">
-    <div class="main_css">
-    <input class="input" type="input" id="fuelPrice" name="fuelPrice" value="0"> Стоимость 1 литра топлива<Br>
-    <input class="input" type="input" id="fullTankFuel" name="fullTankFuel" value="0"> Литров в баке<Br>
-    <input class="input" type="input" id="fullTankMileage" name="fullTankMileage" value="0"> Пробег на баке<Br>
-    <input class="input" type="input" id="tankYearMileage" name="tankYearMileage" value="0"> Пробег за 1 год<Br>
-    <input class="input" type="input" id="insuranceOsago" name="insuranceOsago" value="0"> Страховка ОСАГО<Br>
-    <input class="input" type="input" id="insuranceKacko" name="insuranceKacko" value="0"> Страховка КАСКО<Br>
-    <input class="input" type="input" id="carTax" name="carTax" value="0"> Транспортный налог<Br>
-    <input class="input" type="input" id="maintranceYear" name="maintranceYear" value="0"> Стоимость ТО и ремонта в год<Br>
-    <input class="input" type="input" id="additionalCost" name="additionalCost" value="0"> Дополнительные расходы<Br>
-    <input class="input" type="input" id="ticket" name="ticket" value="0"> Штрафы за год<Br>
-    <input class="input" type="input" id="rentCarSpace" name="rentCarSpace" value="0"> Аренда машиноместа<Br>
-    <Br>
-    <input type="button" class="btn btn-info" onclick="totalCount()" name="ok" value="Рассчитать">
-    <input type="button" class="btn btn-info" onclick="load()" name="ok2" value="test">
-    <Br>
-    <p>Траты за 1 год: <output id="totalCount" name="totalCount" value="totalCount"></output></p>
-    <p>Стоимость владение за 1 день: <output id="resultOneDay" name="resultOneDay" value="resultOneDay">0</output></p>
-    <p>Стоимость владение за год: <output id="resultOneYear" name="resultOneYear" value="resultOneYear">0</output></p>
-    <p>Стоимость 1 км пути: <output id="costMileage" name="costMileage" value="costMileage">0</output></p>
-    <p>Расход л/100км: <output id="costOneKm" name="costOneKm" value="costOneKm">0</output></p>
-    </div>
-    </div>
-
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+            <div class="main_css">
+                <input class="input" type="input" id="fuelPrice" name="fuelPrice" value="0"> Стоимость 1 литра топлива<br>
+                <input class="input" type="input" id="fullTankFuel" name="fullTankFuel" value="0"> Литров в баке<br>
+                <input class="input" type="input" id="fullTankMileage" name="fullTankMileage" value="0"> Пробег на баке<br>
+                <input class="input" type="input" id="tankYearMileage" name="tankYearMileage" value="0"> Пробег за 1 год<br>
+                <input class="input" type="input" id="insuranceOsago" name="insuranceOsago" value="0"> Страховка ОСАГО<br>
+                <input class="input" type="input" id="insuranceKacko" name="insuranceKacko" value="0"> Страховка КАСКО<br>
+                <input class="input" type="input" id="carTax" name="carTax" value="0"> Транспортный налог<br>
+                <input class="input" type="input" id="maintranceYear" name="maintranceYear" value="0"> Стоимость ТО и ремонта в год<br>
+                <input class="input" type="input" id="additionalCost" name="additionalCost" value="0"> Дополнительные расходы<br>
+                <input class="input" type="input" id="ticket" name="ticket" value="0"> Штрафы за год<br>
+                <input class="input" type="input" id="rentCarSpace" name="rentCarSpace" value="0"> Аренда машиноместа<br>
+                <br>
+                <input type="button" class="btn btn-info" onclick="totalCount()" name="ok" value="Рассчитать">
+                <input type="button" class="btn btn-info" onclick="load()" name="ok2" value="Загрузить тестовые параметры">
+                <br>
+                <p>Траты за 1 год: <output id="totalCount" name="totalCount" value="totalCount"></output></p>
+                <p>Стоимость владение за 1 день: <output id="resultOneDay" name="resultOneDay" value="resultOneDay">0</output></p>
+                <p>Стоимость владение за год: <output id="resultOneYear" name="resultOneYear" value="resultOneYear">0</output></p>
+                <p>Стоимость 1 км пути: <output id="costMileage" name="costMileage" value="costMileage">0</output></p>
+                <p>Расход л/100км: <output id="costOneKm" name="costOneKm" value="costOneKm">0</output></p>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="main.js"></script>
 </body>
-
 </html>
